@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuerza Laboral Artificial - Cursos de Automatización con IA</title>
+    <meta name="description" content="Talleres para emprendedores que quieren explorar la automatización de procesos utilizando agentes y herramientas de inteligencia artificial">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-robot"></i>
+                <span>FLA</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#cursos" class="nav-link">Cursos</a>
+                <a href="#beneficios" class="nav-link">Beneficios</a>
+                <a href="#testimonios" class="nav-link">Testimonios</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Domina la <span class="gradient-text">Fuerza Laboral Artificial</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Descubre cómo automatizar procesos empresariales utilizando agentes inteligentes y herramientas de IA. 
+                    El futuro del trabajo está aquí.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('cursos')">
+                        <i class="fas fa-rocket"></i>
+                        Explorar Cursos
+                    </button>
+                    <button class="btn btn-secondary" onclick="openModal('demo')">
+                        <i class="fas fa-play"></i>
+                        Ver Demo
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <i class="fas fa-brain"></i>
+                    <span>IA Inteligente</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-cogs"></i>
+                    <span>Automatización</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Resultados</span>
+                </div>
+                <div class="hero-image">
+                    <div class="ai-robot">
+                        <div class="robot-head">
+                            <div class="robot-eye left"></div>
+                            <div class="robot-eye right"></div>
+                        </div>
+                        <div class="robot-body">
+                            <div class="circuit-lines"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Por qué elegir nuestros cursos?</h2>
+                <p>Descubre las ventajas de aprender con nosotros</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Aprendizaje Práctico</h3>
+                    <p>Proyectos reales y casos de estudio que te preparan para el mundo laboral actual.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Comunidad Activa</h3>
+                    <p>Conecta con otros emprendedores y profesionales del sector de la IA.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Flexibilidad Total</h3>
+                    <p>Aprende a tu ritmo con contenido disponible 24/7 y sesiones en vivo.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certificación</h3>
+                    <p>Obtén tu certificado oficial al completar el programa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="cursos" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Cursos</h2>
+                <p>Programas diseñados para transformar tu negocio</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-badge">Principiante</div>
+                    <div class="course-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Fundamentos de IA para Emprendedores</h3>
+                    <p>Introducción práctica a la inteligencia artificial y su aplicación en negocios.</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> 8 semanas de duración</li>
+                        <li><i class="fas fa-check"></i> Proyectos prácticos</li>
+                        <li><i class="fas fa-check"></i> Mentoría personalizada</li>
+                    </ul>
+                    <button class="btn btn-outline">Más Información</button>
+                </div>
+                <div class="course-card featured">
+                    <div class="course-badge">Intermedio</div>
+                    <div class="course-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Automatización con Agentes IA</h3>
+                    <p>Desarrolla agentes inteligentes para automatizar procesos empresariales complejos.</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> 12 semanas de duración</li>
+                        <li><i class="fas fa-check"></i> Herramientas avanzadas</li>
+                        <li><i class="fas fa-check"></i> Implementación real</li>
+                    </ul>
+                    <button class="btn btn-primary">Inscribirse Ahora</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-badge">Avanzado</div>
+                    <div class="course-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Optimización de Procesos con IA</h3>
+                    <p>Maximiza la eficiencia de tu empresa utilizando análisis predictivo y optimización.</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> 10 semanas de duración</li>
+                        <li><i class="fas fa-check"></i> Análisis de datos</li>
+                        <li><i class="fas fa-check"></i> Estrategias avanzadas</li>
+                    </ul>
+                    <button class="btn btn-outline">Más Información</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="beneficios" class="benefits">
+        <div class="container">
+            <div class="benefits-content">
+                <div class="benefits-text">
+                    <h2>Transforma tu negocio con IA</h2>
+                    <p>Descubre cómo la inteligencia artificial puede revolucionar tu empresa y aumentar tu productividad.</p>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-arrow-up"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h4>Aumenta la Productividad</h4>
+                            <p>Automatiza tareas repetitivas y enfócate en lo que realmente importa.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h4>Reduce Costos</h4>
+                            <p>Optimiza recursos y reduce gastos operativos significativamente.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h4>Innovación Constante</h4>
+                            <p>Mantente a la vanguardia con las últimas tecnologías de IA.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits-visual">
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Aumento en Productividad</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">60%</div>
+                            <div class="stat-label">Reducción de Costos</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">Emprendedores Formados</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Lo que dicen nuestros estudiantes</h2>
+                <p>Experiencias reales de emprendedores que transformaron sus negocios</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Los cursos de FLA me ayudaron a automatizar el 80% de las tareas administrativas de mi empresa. Ahora puedo enfocarme en el crecimiento del negocio."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>María González</h4>
+                            <span>CEO, TechStart</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Excelente programa. Los instructores son expertos en el campo y el contenido es muy práctico. Recomiendo totalmente estos cursos."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Carlos Rodríguez</h4>
+                            <span>Fundador, InnovateLab</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Gracias a FLA, implementé un sistema de IA que aumentó mis ventas en un 150%. La inversión se pagó sola en el primer mes."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Ana Martínez</h4>
+                            <span>Emprendedora Digital</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para transformar tu negocio?</h2>
+                <p>Únete a miles de emprendedores que ya están aprovechando el poder de la IA</p>
+                <button class="btn btn-primary btn-large" onclick="openModal('contact')">
+                    <i class="fas fa-paper-plane"></i>
+                    Comenzar Ahora
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-robot"></i>
+                        <span>FLA</span>
+                    </div>
+                    <p>Formando la próxima generación de líderes en inteligencia artificial y automatización.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Cursos</h4>
+                    <ul>
+                        <li><a href="#">Fundamentos de IA</a></li>
+                        <li><a href="#">Automatización con Agentes</a></li>
+                        <li><a href="#">Optimización de Procesos</a></li>
+                        <li><a href="#">Certificaciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Webinars</a></li>
+                        <li><a href="#">Comunidad</a></li>
+                        <li><a href="#">Soporte</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@fla.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Ciudad de México, MX</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fuerza Laboral Artificial. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body">
+                <!-- Modal content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
